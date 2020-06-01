@@ -1,0 +1,98 @@
+{
+  "React component in Typescript": {
+    "prefix": "component",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface ${1:ComponentName}Props {",
+      "\t$2",
+      "}",
+      "",
+      "export const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = ($3) => {",
+      "\treturn ${4:<></>}",
+      "}"
+    ]
+  },
+
+  "Typescript interface": {
+    "prefix": "interface",
+    "body": ["interface ${1:InterfaceName} {", "\t$2", "}"]
+  },
+
+  "Typescript exported interface": {
+    "prefix": "einterface",
+    "body": ["export interface ${1:InterfaceName} {", "\t$2", "}"]
+  },
+
+  "Typescript type": {
+    "prefix": "type",
+    "body": ["type ${1:TypeName} = {", "\t$2", "}"]
+  },
+
+  "Typescript exported type": {
+    "prefix": "etype",
+    "body": ["export type ${1:TypeName} = {", "\t$2", "}"]
+  },
+
+  "Typescript generic type": {
+    "prefix": "gtype",
+    "body": ["type ${1:TypeName}<$2> = {", "\t$3", "}"]
+  },
+
+  "Typescript exported generic type": {
+    "prefix": "egtype",
+    "body": ["export type ${1:TypeName}<$2> = {", "\t$3", "}"]
+  },
+
+  "React useState": {
+    "prefix": "hstate",
+    "body": [
+      "const [${1:value}, ${2:setValue}] = useState<${3:Type}>(${4:initialValue})"
+    ]
+  },
+
+  "Redux saga": {
+    "prefix": "saga",
+    "body": [
+      "import { StrictEffect } from 'redux-saga/effects'",
+      "",
+      "function* ${1:sagaName}($2): Generator<StrictEffect, ${3:void}, ${4:void}>{",
+      "\t$5",
+      "}"
+    ]
+  },
+
+  "Import styled components": {
+    "prefix": "istyled",
+    "body": "import styled from 'styled-components'"
+  },
+
+  "Styled components div": {
+    "prefix": "sdiv",
+    "body": ["const ${1:StyledDiv} = styled.div`", "\t$2", "`"]
+  },
+
+  "Styled components span": {
+    "prefix": "sspan",
+    "body": ["const ${1:StyledSpan} = styled.span`", "\t$2", "`"]
+  },
+
+  "Styled components button": {
+    "prefix": "sbutton",
+    "body": ["const ${1:StyledButton} = styled.button`", "\t$2", "`"]
+  },
+
+  "Styled components img": {
+    "prefix": "simg",
+    "body": ["const ${1:StyledImg} = styled.img`", "\t$2", "`"]
+  },
+
+  "Styled components custom": {
+    "prefix": "scomp",
+    "body": [
+      "const ${1:StyledComponent} = styled(${2:ComponentName})`",
+      "\t$3",
+      "`"
+    ]
+  }
+}
