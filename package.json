@@ -1,7 +1,7 @@
 {
   "name": "various-react-snippets",
   "displayName": "Various React Snippets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Snippets for VSCode for React and Typescript",
   "icon": "icon/react-ts.png",
   "contributes": {
@@ -27,6 +27,10 @@
   "author": {
     "name": "Hugo Martinet",
     "email": "hugo.martinet@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "martoss/various-react-snippets.git"
   },
   "publisher": "hugomartinet",
   "keywords": [
